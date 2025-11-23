@@ -1,0 +1,71 @@
+*,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(10, 11, 58);
+            ;
+        }
+
+        .box {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(10, 11, 58);
+            color: white;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+
+            >div {
+                width: 20px;
+                height: 100%;
+                flex-grow: 1;
+                border: 4px solid rgb(10, 11, 58);
+                transition: 1s;
+                background-size: auto 100%;
+
+                &:hover {
+                    flex-grow: 2.5;
+                }
+
+                &:nth-last-of-type(1) {
+                    background-image: url(../image/ccc.jpg);
+                }
+
+                &:nth-last-of-type(2) {
+                    background-image: url(../image/fff.jpg);
+                }
+
+                &:nth-last-of-type(3) {
+                    background-image: url(../image/hhh.jpg);
+                }
+
+                &:nth-last-of-type(4) {
+                    background-image: url(../image/bbb.jpg);
+                }
+
+                &:nth-last-of-type(5) {
+                    background-image: url(../image/ddd.jpg);
+                }
+
+                &:nth-last-of-type(6) {
+                    background-image: url(../image/eee.jpg);
+                }
+
+                &:nth-last-of-type(7) {
+                    background-image: url(../image/aaa.jpg);
+                }
+
+            }
+        }
